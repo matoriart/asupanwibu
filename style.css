@@ -78,3 +78,428 @@ body{
     color: white;
     text-align: center;
 }
+@media only screen and (max-width: 600px){
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 41vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    .col-md-12{
+        background-image: url(images/1210921.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
+    #text{
+        font-size: 14px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 20px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 29vw;
+        background-color: rgb(192, 196, 194);
+        width: 35vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 10vh;
+    }
+}
+@media only screen and (min-width: 600px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 55vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    .col-md-12{
+        background-image: url(images/1210921.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
+    #text{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 25px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 20vw;
+        background-color: rgb(192, 196, 194);
+        width: 50vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 15vh;
+    }
+}
+@media only screen and (min-width: 768px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 55vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    .col-md-12{
+        background-image: url(images/1210921.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
+    #text{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 25px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 25vw;
+        background-color: rgb(192, 196, 194);
+        width: 50vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 19vh;
+    }
+}
+@media only screen and (min-width: 992px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 55vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    .col-md-12{
+        background-image: url(images/1041382.png);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
+    #text{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 30px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 25vw;
+        background-color: rgb(192, 196, 194);
+        width: 50vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 19vh;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 55vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    .col-md-12{
+        background-image: url(images/1041382.png);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
+    #text{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 30px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 25vw;
+        background-color: rgb(192, 196, 194);
+        width: 50vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 19vh;
+    }
+}
