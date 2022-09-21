@@ -41,23 +41,26 @@ body{
     padding: 0 1.1vw;
     justify-content: space-between;
 }
-.menu ul li a{
+.menu ul li a:after{
+    width: 0;
     letter-spacing: 1px;
     float: left;
     text-decoration: none;
     color: white;
     transition: .3s;
 }
-.menu ul li a:hover{
+.menu ul li a:after:hover{
+    width: 100%;
     border-bottom: 1px solid red;
     color: navy;
 }
-.col-md-12{
-    background-image: url(images/1041382.png);
+#Bg-Home{
+    background-image: url(images/uwp1400713.png);
     background-repeat: none;
     background-size: cover;
     height: 93.5vh;
 }
+
 #text{
     letter-spacing: 1px;
     font-family: "PASTO";
@@ -73,12 +76,130 @@ body{
     width: 20vw;
     height: 4vh;
     border-radius: 15px;
+    transition: .2s;
+}
+#link-aw:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px red,
+                 0 0 10px  blue;
 }
 .net p{
     color: white;
     text-align: center;
 }
-@media (max-width:600px){
+/* Anime Class */
+#bg-anime{
+    background: linear-gradient(
+        to right,
+        rgb(168, 164, 164),
+        rgb(235, 222, 222)
+    );
+    height: 45vh;
+}
+#text-anime{
+    font-family: "PASTO";
+    text-align: center;
+    padding-top: 2vh;
+}
+#text-anime span{
+    color: red;
+}
+#box1{
+    width: 30vw;
+    height: 30vh;
+    transition: all .3s ease ;
+}
+#box1 img{
+    width: 30vw;
+}
+#box2{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 34vw;
+    margin-top: -22vh;
+    transition: all .3s ease ;
+}
+#box2 img{
+    width: 30vw;
+}
+#box3{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 68vw;
+    margin-top: -38vh;
+    transition: all .3s ease ;
+}
+#box3 img{
+    width: 30vw;
+}
+#caption{
+    letter-spacing: 0.4px;
+    font-family: "PASTO";
+    color: black;
+    margin-top:-27.5vh;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: all .3s ease ;
+}
+h5{
+    color: red;
+}
+#box1:hover #caption{
+    opacity: 1;
+}
+#box2:hover #caption{
+    opacity: 1;
+}
+#box3:hover #caption{
+    opacity: 1;
+}
+#box1 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box2 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box3 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#Wallpaper h1{
+    font-family: "PASTO";
+}
+#Wallpaper h1 span{
+    color: rgb(179, 0, 255);
+}
+#wrapw{
+    margin-top: 10vh;
+    display: flex;
+}
+#cs{
+    font-family: "PASTO";
+    text-align: center;
+    margin-top: 10vh;
+}
+#ftr{
+    font-family: "PASTO";
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+}
+#ftr footer{
+    display: flex;
+}
+#ftr h4{
+    margin-top: 3vh;
+    margin-left: 14vw;
+    color: white;
+}
+#ftr h4 span{
+    color: red;
+}
+/* Anime Class ENd */
+@media only screen and (max-width: 600px){
     *{
         box-sizing: border-box;
         padding: 0;
@@ -88,40 +209,1001 @@ body{
     body{
         height: 50vh;
     }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
     .menu{
-        width: 45vw;
+        width: 41vw;
         height: 4vh;
-        margin-right: 1vh;
+        margin-right: 0vh;
         background-color: #b3a9a9;
         border-radius: 20px;
         display: flex;
         justify-content: space-between;
     }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
     .menu ul li a{
         letter-spacing: 1px;
         float: left;
-        font-size: 19px;
-        padding: 0 1.2vw;
         text-decoration: none;
         color: white;
         transition: .3s;
     }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    #Bg-Home{
+        background-image: url(images/1210921.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
     #text{
-        font-family: "PASTO";
         font-size: 14px;
-        width: 45vw;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 20px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 29vw;
+        background-color: rgb(192, 196, 194);
+        width: 35vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 10vh;
+    }
+    /* Anime Class */
+#bg-anime{
+    background: linear-gradient(
+        to right,
+        rgb(168, 164, 164),
+        rgb(235, 222, 222)
+    );
+    height: 120vh;
+}
+#text-anime h1{
+    font-family: "PASTO";
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 6vh;
+}
+#text-anime span{
+    color: red;
+}
+#box1{
+    width: 90vw;
+    height: 90vh;
+    transition: all .3s ease ;
+}
+#box1 img{
+    width: 90vw;
+}
+#box2{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 0vw;
+    margin-top: -45vh;
+    transition: all .3s ease ;
+}
+#box2 img{
+    width: 90vw;
+}
+#box3{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 0vw;
+    margin-top: -45vh;
+    transition: all .3s ease ;
+}
+#box3 img{
+    width: 90vw;
+}
+#caption{
+    letter-spacing: 0.4px;
+    font-family: "PASTO";
+    color: black;
+    margin-top:-18.5vh;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    font-size: 3.3vw;
+    opacity: 0;
+    transition: all .3s ease ;
+}
+#box1:hover #caption{
+    opacity: 1;
+}
+#box2:hover #caption{
+    opacity: 1;
+}
+#box3:hover #caption{
+    opacity: 1;
+}
+#box1 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box2 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box3 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#Wallpaper h1{
+    font-family: "PASTO";
+    font-size: 11vw;
+    margin-top: -60vh;
+}
+#Wallpaper h1 span{
+    color: rgb(179, 0, 255);
+}
+#wrapw{
+    margin-top: 10vh;
+    display: flex;
+}
+#cs{
+    font-family: "PASTO";
+    text-align: center;
+    margin-top: 10vh;
+}
+#ftr{
+    font-family: "PASTO";
+    background-color: black;
+    width:100%;
+    height: 10vh;
+}
+#ftr footer{
+    display: flex;
+}
+#ftr h4{
+    font-size: 3vw;
+    margin-top: 3vh;
+    margin-left: 7vw;
+    color: white;
+}
+#ftr h4 span{
+    color: red;
+}
+h5{
+    color: red;
+}
+/* Anime Class ENd */
+}
+@media only screen and (min-width: 600px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 55vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    #Bg-Home{
+        background-image: url(images/1210921.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
+    #text{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
     }
     #text h1{
         font-size: 25px;
     }
-    #link-aw{
-       display: none;
+    #text span{
+        color: red;
     }
-    .col-md-12{
+    #link-aw{
+        margin-left: 20vw;
+        background-color: rgb(192, 196, 194);
+        width: 50vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 15vh;
+    }
+        /* Anime Class */
+#bg-anime{
+    background: linear-gradient(
+        to right,
+        rgb(168, 164, 164),
+        rgb(235, 222, 222)
+    );
+    height: 190vh;
+}
+#text-anime h1{
+    font-family: "PASTO";
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 6vh;
+}
+#text-anime span{
+    color: red;
+}
+#box1{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 2vw;
+    transition: all .3s ease ;
+}
+#box1 img{
+    width: 90vw;
+}
+#box2{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 2vw;
+    margin-top: -20vh;
+    transition: all .3s ease ;
+}
+#box2 img{
+    width: 90vw;
+}
+#box3{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 2vw;
+    margin-top: -20vh;
+    transition: all .3s ease ;
+}
+#box3 img{
+    width: 90vw;
+}
+#caption{
+    letter-spacing: 0.4px;
+    font-family: "PASTO";
+    color: black;
+    margin-top:-18.5vh;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: all .3s ease ;
+}
+#box1:hover #caption{
+    opacity: 1;
+}
+#box2:hover #caption{
+    opacity: 1;
+}
+#box3:hover #caption{
+    opacity: 1;
+}
+#box1 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box2 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box3 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#Wallpaper h1{
+    font-family: "PASTO";
+    font-size: 9vw;
+    margin-top: -40vh;
+}
+#Wallpaper h1 span{
+    color: rgb(179, 0, 255);
+}
+#wrapw{
+    margin-top: 10vh;
+    display: flex;
+}
+#cs{
+    font-family: "PASTO";
+    text-align: center;
+    margin-top: 10vh;
+}
+#ftr{
+    font-family: "PASTO";
+    background-color: black;
+    width:100%;
+    height: 10vh;
+}
+#ftr footer{
+    display: flex;
+}
+#ftr h4{
+    font-size: 3vw;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    color: white;
+}
+#ftr h4 span{
+    color: red;
+}
+h5{
+    color: red;
+}
+/* Anime Class ENd */
+}
+@media only screen and (min-width: 768px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 55vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    #Bg-Home{
         background-image: url(images/1210921.jpg);
         background-repeat: none;
         background-size: cover;
-        width: 100%;
-        height: 108vh;
+        height: 93.5vh;
     }
+    #text{
+        font-size: 15px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 25px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 25vw;
+        background-color: rgb(192, 196, 194);
+        width: 50vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 19vh;
+    }
+            /* Anime Class */
+#bg-anime{
+    background: linear-gradient(
+        to right,
+        rgb(168, 164, 164),
+        rgb(235, 222, 222)
+    );
+    height: 180vh;
+}
+#text-anime h1{
+    font-family: "PASTO";
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 6vh;
+}
+#text-anime span{
+    color: red;
+}
+#box1{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 3vw;
+    transition: all .3s ease ;
+}
+#box1 img{
+    width: 90vw;
+}
+#box2{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 3vw;
+    margin-top: -20vh;
+    transition: all .3s ease ;
+}
+#box2 img{
+    width: 90vw;
+}
+#box3{
+    width: 90vw;
+    height: 90vh;
+    margin-left: 3vw;
+    margin-top: -20vh;
+    transition: all .3s ease ;
+}
+#box3 img{
+    width: 90vw;
+}
+#caption{
+    letter-spacing: 0.4px;
+    font-family: "PASTO";
+    color: white;
+    margin-top:-18.5vh;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: all .3s ease ;
+}
+#box1:hover #caption{
+    opacity: 1;
+}
+#box2:hover #caption{
+    opacity: 1;
+}
+#box3:hover #caption{
+    opacity: 1;
+}
+#box1 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box2 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box3 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#Wallpaper h1{
+    font-family: "PASTO";
+    font-size: 9vw;
+    margin-top: -25vh;
+}
+#Wallpaper h1 span{
+    color: rgb(179, 0, 255);
+}
+#wrapw{
+    margin-top: 10vh;
+    display: flex;
+}
+#cs{
+    font-family: "PASTO";
+    text-align: center;
+    margin-top: 10vh;
+}
+#ftr{
+    font-family: "PASTO";
+    background-color: black;
+    width:100%;
+    height: 10vh;
+}
+#ftr footer{
+    display: flex;
+}
+#ftr h4{
+    font-size: 3vw;
+    margin-top: 3vh;
+    margin-left: 5vw;
+    color: white;
+}
+#ftr h4 span{
+    color: red;
+}
+h5{
+    color: red;
+}
+/* Anime Class ENd */
+}
+@media only screen and (min-width: 992px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 55vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    #Bg-Home{
+        background-image: url(images/1041382.png);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
+    #text{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 30px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 25vw;
+        background-color: rgb(192, 196, 194);
+        width: 50vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 19vh;
+    }
+    /* Anime Class */
+#bg-anime{
+    background: linear-gradient(
+        to right,
+        rgb(168, 164, 164),
+        rgb(235, 222, 222)
+    );
+    height: 45vh;
+}
+#text-anime{
+    font-family: "PASTO";
+    text-align: center;
+    padding-top: 2vh;
+}
+#text-anime span{
+    color: red;
+}
+#box1{
+    width: 30vw;
+    height: 30vh;
+    transition: all .3s ease ;
+}
+#box1 img{
+    width: 30vw;
+}
+#box2{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 35.5vw;
+    margin-top: -22vh;
+    transition: all .3s ease ;
+}
+#box2 img{
+    width: 30vw;
+}
+#box3{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 68vw;
+    margin-top: -38vh;
+    transition: all .3s ease ;
+}
+#box3 img{
+    width: 30vw;
+}
+#caption{
+    letter-spacing: 0.4px;
+    font-family: "PASTO";
+    color: black;
+    margin-top:-20.5vh;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    font-size: 1.3vw;
+    opacity: 0;
+    transition: all .3s ease ;
+}
+#box1:hover #caption{
+    opacity: 1;
+}
+#box2:hover #caption{
+    opacity: 1;
+}
+#box3:hover #caption{
+    opacity: 1;
+}
+#box1 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box2 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box3 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#Wallpaper h1{
+    margin-top: 20vh;
+    font-size: 5vw;
+    font-family: "PASTO";
+}
+#Wallpaper h1 span{
+    color: rgb(179, 0, 255);
+}
+#wrapw{
+    margin-top: 10vh;
+    display: flex;
+}
+#cs{
+    font-family: "PASTO";
+    text-align: center;
+    margin-top: 10vh;
+}
+#ftr{
+    font-family: "PASTO";
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+}
+#ftr footer{
+    display: flex;
+}
+#ftr h4{
+    font-size: 2vw;
+    margin-top: 3vh;
+    margin-left: 12.5vw;
+    color: white;
+}
+#ftr h4 span{
+    color: red;
+}
+h5{
+    color: red;
+}
+/* END ANIME CLASS */
+}
+@media only screen and (min-width: 1200px) {
+    *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        scroll-behavior: smooth;
+    }
+    body{
+        height: 50vh;
+    }
+    .navbar{
+        background: linear-gradient(
+            to right,
+            rgb(168, 164, 164),
+            rgb(235, 222, 222)
+        );
+        width: 100%;
+        height: 6.5vh;
+    }
+    .brand{
+        width: 5vw;
+        height: 5vh;
+        z-index: 1;
+    }
+    .menu{
+        width: 55vw;
+        height: 4vh;
+        margin-right: 0vh;
+        background-color: #b3a9a9;
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu ul{
+        display: flex;
+    }
+    .menu ul li{
+        padding: 0 1.1vw;
+        justify-content: space-between;
+    }
+    .menu ul li a{
+        letter-spacing: 1px;
+        float: left;
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    .menu ul li a:hover{
+        border-bottom: 1px solid red;
+        color: navy;
+    }
+    #Bg-Home{
+        background-image: url(images/wp8386741-arknights-all-characters-wallpapers.jpg);
+        background-repeat: none;
+        background-size: cover;
+        height: 93.5vh;
+    }
+    #text{
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: "PASTO";
+        width: 60vw;
+        color: white;
+    }
+    #text h1{
+        font-size: 30px;
+    }
+    #text span{
+        color: red;
+    }
+    #link-aw{
+        margin-left: 25vw;
+        background-color: rgb(192, 196, 194);
+        width: 50vw;
+        height: 4vh;
+        border-radius: 15px;
+    }
+    .net p{
+        color: white;
+        text-align: center;
+    }
+    #xz{
+        padding-top: 19vh;
+    }
+    /* Anime Class */
+#bg-anime{
+    background: linear-gradient(
+        to right,
+        rgb(168, 164, 164),
+        rgb(235, 222, 222)
+    );
+    height: 45vh;
+}
+#text-anime{
+    font-family: "PASTO";
+    text-align: center;
+    padding-top: 2vh;
+}
+#text-anime span{
+    color: red;
+}
+#box1{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 0vw;
+    transition: all .3s ease ;
+}
+#box1 img{
+    width: 30vw;
+}
+#box2{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 34vw;
+    margin-top: -22vh;
+    transition: all .3s ease ;
+}
+#box2 img{
+    width: 30vw;
+}
+#box3{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 68vw;
+    margin-top: -38vh;
+    transition: all .3s ease ;
+}
+#box3 img{
+    width: 30vw;
+}
+#caption{
+    letter-spacing: 0.4px;
+    font-family: "PASTO";
+    color: black;
+    margin-top:-27.5vh;
+    text-align: center;
+    backdrop-filter: blur(2px);
+    opacity: 0;
+    transition: all .3s ease ;
+}
+#box1:hover #caption{
+    opacity: 1;
+}
+#box2:hover #caption{
+    opacity: 1;
+}
+#box3:hover #caption{
+    opacity: 1;
+}
+#box1 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box2 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#box3 img:hover{
+    transform: scaleZ(1.0);
+    filter: blur(2px);
+}
+#Wallpaper h1{
+    margin-top: 20vh;
+    font-size: 5vw;
+    font-family: "PASTO";
+}
+#Wallpaper h1 span{
+    color: rgb(179, 0, 255);
+}
+#wrapw{
+    margin-top: 10vh;
+    display: flex;
+}
+#cs{
+    font-family: "PASTO";
+    text-align: center;
+    margin-top: 10vh;
+}
+#ftr{
+    font-family: "PASTO";
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+}
+#ftr footer{
+    display: flex;
+}
+#ftr h4{
+    font-size: 2vw;
+    margin-top: 3vh;
+    margin-left: 12.5vw;
+    color: white;
+}
+#ftr h4 span{
+    color: red;
+}
+h5{
+    color: red;
+}
+/* END ANIME CLASS */
 }
